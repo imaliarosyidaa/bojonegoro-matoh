@@ -24,15 +24,13 @@
     <body>
         <!-- Hero Section -->
     <section class="relative bg-cover bg-center min-h-screen flex items-center" 
-             style="background-image: url('{{ asset('images/bojonegoro.png') }}')">
+             style="background-image: url('{{ asset('images/asal-usul-bojonegoro.png') }}')">
         <div class="bg-black/50 absolute inset-0"></div>
         <div class="relative z-10 mx-auto px-6 py-16 justify-center text-center items-center">
             <div class="text-white">
-                <h1 class="text-3xl md:text-5xl font-bold leading-snug md:leading-[1.3]">
-  <span class="text-amber-400">Bersama lestarikan</span> <br>
-  kebudayaan di Kab. Bojonegoro
-</h1>
-
+                <h1 class="text-3xl md:text-5xl font-bold leading-tight">
+                    Asal-usul <br> Kabupaten Bojonegoro
+                </h1>
                 <p class="mt-4 text-lg">
                     Ketahui sejarah, warisan budaya, dan kearifan lokal di Kabupaten Bojonegoro.
                 </p>
@@ -44,121 +42,103 @@
     </section>
 
     @include('partials.nav')
-    
-    
-<!-- Section: Mengapa Penting Dilestarikan -->
-<section class="py-16  ">
-    <div class="max-w-7xl mx-auto px-6 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold text-yellow-700">
-            Mengapa Penting Melestarikan Budaya?
-        </h2>
-        <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
-            Budaya adalah identitas, warisan, dan jati diri masyarakat Bojonegoro. Melestarikannya berarti menjaga nilai luhur untuk generasi mendatang.
-        </p>
 
-        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Kartu 1 -->
-            <div class="bg-blue-900 text-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
-                <h3 class="font-semibold text-lg">Menjaga Identitas Daerah</h3>
-                <p class="mt-2 text-sm opacity-90">
-                    Budaya menjadi ciri khas yang membedakan Bojonegoro dengan daerah lain.
-                </p>
-            </div>
-
-            <!-- Kartu 2 -->
-            <div class="bg-blue-900 text-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
-                <h3 class="font-semibold text-lg">Mewariskan Nilai Luhur</h3>
-                <p class="mt-2 text-sm opacity-90">
-                    Tradisi dan kearifan lokal mengajarkan nilai kebersamaan, gotong royong, dan hormat pada leluhur.
-                </p>
-            </div>
-
-            <!-- Kartu 3 -->
-            <div class="bg-blue-900 text-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
-                <h3 class="font-semibold text-lg">Mengembangkan Pariwisata</h3>
-                <p class="mt-2 text-sm opacity-90">
-                    Budaya yang lestari menjadi daya tarik wisata dan meningkatkan perekonomian masyarakat.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Ketahui Budaya Section -->
-<section class="py-20 px-6 bg-gradient-to-r from-amber-100 to-red-100">
-<div class="max-w-6xl mx-auto">
-<div class="text-center mb-16">
-<h2 class="text-4xl font-bold text-amber-600 mb-4">Ketahui</h2>
-<h3 class="text-3xl font-semibold text-gray-800 mb-8">Budaya yang ada Di Kab. Bojonegoro</h3>
-</div>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
-        <div class="space-y-6">
-            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
-                <div class="flex items-center mb-4">
-                    <h4 class="text-lg font-semibold text-gray-800">Wayang Thengul</h4>
+<section class="py-20 px-6">
+        <div class="container mx-auto">
+            <!-- Card 1 -->
+            <div class="flex flex-col md:flex-row items-start md:space-x-8 mb-12">
+                <div class="w-full md:w-1/2 mb-4 md:mb-0">
+                <img  src="{{ asset('images/kerajaan-majapahit.jpg') }}" alt="Description of the image" class="rounded-lg shadow-md w-full">
                 </div>
-                <p class="text-gray-600 text-sm">
-                    Wayang khas Bojonegoro yang berbentuk boneka kayu, dimainkan untuk menyampaikan cerita rakyat penuh makna.
-                </p>
-            </div>
-            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
-                <div class="flex items-center mb-4">
-                    <h4 class="text-lg font-semibold text-gray-800">Tayub Bojonegoro</h4>
-                </div>
-                <p class="text-gray-600 text-sm">
-                    Seni tari tradisional yang penuh keceriaan, biasanya ditampilkan pada acara-acara rakyat.
-                </p>
-            </div>
-        </div>
-        
-        <div class="bg-white/20 rounded-lg p-6 mb-6">
-            <img src="{{ asset('images/kab-bojonegoro.jpg') }}"
-                alt="Wayang Thengul Bojonegoro" 
-                class="w-full h-full object-cover rounded-lg mb-4">
-        </div>
-        
-        <div class="space-y-6">
-            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
-                <div class="flex items-center mb-4">
-                    <h4 class="text-lg font-semibold text-gray-800">Tari Thengul</h4>
-                </div>
-                <p class="text-gray-600 text-sm">
-                    Tari tradisional Bojonegoro yang terinspirasi dari gerak dan ekspresi Wayang Thengul.
-                </p>
-            </div>
-            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
-                <div class="flex items-center mb-4">
-                    <h4 class="text-lg font-semibold text-gray-800">Wayang Krucil</h4>
-                </div>
-                <p class="text-gray-600 text-sm">
-                    Seni wayang khas Bojonegoro yang dibuat dari kayu jati dengan cerita dari Panji hingga Majapahit.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-</section>
 
-    <!-- Section: Tahukah Kamu -->
-    <section class="py-16  ">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div>
-                <h2 class="text-3xl md:text-4xl font-bold text-yellow-700">
-                    Tahukah kamu?
-                </h2>
-                <p class="mt-4 text-gray-700">Bojonegoro pernah mencatat rekor muri pada perayaan festival Tari Thengul pada tahun 2019 yang melibatkan 2019 penari. Pemecahan rekor ini untuk menegaskan Tari Thengul sebagai ikon budaya daerah  melalui Thengul International Folklore Festival (TIFF) 2019.</p>
-                <button class="mt-6 px-6 py-3 bg-red-900 text-white rounded-lg">Selengkapnya</button>
+                <div class="w-full md:w-1/2">
+                <div class="flex items-center mb-4 space-x-2 justify-end">
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-800">
+                    Abad XVI
+                    </h3>
+                    <div class="w-4 h-4 bg-orange-400 rounded-full"></div>
+                </div>
+                <p class="text-end text-gray-600 leading-relaxed">
+                    Bojonegoro masih dalam wilayah kekuasaan Majapahit sampai abad XVI ketika runtuhnya kerajaan Majapahit, kekuasaan pindah ke Demak, Jawa Tengah. Bojonegoro menjadi wilayah kerajaan Demak, sehingga sejarah Bojonegoro kuno yang bercorak Hindu dengan fakta yang berupa penemuan-penemuan banyak benda peninggalan sejarah asal jaman kuno di wilayah hukum Kabupaten Bojonegoro mulai terbentuk.
+                </p>
+                </div>
             </div>
-            <div>
-                <img src="{{ asset('images/festival-tari-thengul.jpg') }}" alt="Festival Tari Thengul" class="rounded-xl shadow-md">
+
+            <!-- Card 2 -->
+            <div class="flex flex-col md:flex-row items-start md:space-x-8 mb-12">
+                <div class="w-full md:w-1/2">
+                <div class="flex items-center mb-4 space-x-2 justify-start">
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-800">
+                    Tahun 1568 Masehi
+                    </h3>
+                    <div class="w-4 h-4 bg-orange-400 rounded-full"></div>
+                </div>
+                <p class="text-start text-gray-600 leading-relaxed">
+                    Sehubungan dengan berkembangnya budaya baru yaitu Islam, pengaruh budaya Hindu terdesak dan terjadilah pergeseran nilai dan tata masyarakat dari nilai lama Hindu ke nilai baru Islam tanpa disertai gejolak. Raden Patah, Senopati Jumbun, Adipati Bintoro, diresmikan sebagai raja I awal abad XVI dan sejak itu Bojonegoro menjadi wilayah kedaulatan Demak. Dalam peralihan kekuasaan yang disertai pergolakan membawa Bojonegoro masuk dalam wilayah kerajaan Pajang dengan raja Raden Jaka Tinggkir Adipati Pajang
+                </p>
+                </div>
+                <div class="w-full md:w-1/2 mb-4 md:mb-0">
+                <img src="{{ asset('images/kerajaan-demak.jpg') }}" alt="Description of the image" class="rounded-lg shadow-md w-full">
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="flex flex-col md:flex-row items-start md:space-x-8 mb-12">
+                <div class="w-full md:w-1/2 mb-4 md:mb-0">
+                <img src="{{ asset('images/kerajaan-mataram.jpeg') }}" alt="Description of the image" class="rounded-lg shadow-md w-full">
+                </div>
+
+                <div class="w-full md:w-1/2">
+                <div class="flex items-center mb-4 space-x-2 justify-end">
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-800">
+                    Tahun 1587 Masehi
+                    </h3>
+                    <div class="w-4 h-4 bg-orange-400 rounded-full"></div>
+                </div>
+                <p class="text-end text-gray-600 leading-relaxed">
+                    Pangeran Benawa, putra Sultan Pajang, Adiwijaya merasa tidak mampu untuk melawan Senopati yang telah merebut kekuasaan Pajang
+                Maka Senopati memboyong semua benda pusaka kraton Pajang ke Mataram, sehingga Bojonegoro kembali bergeser menjadi wilayah kerajaan Mataram. Daerah Mataram yang telah diserahkan Sunan Amangkurat kepada VOC berdasarkan perjanjian, adalah pantai utara Pulau Jawa, sehingga merugikan Mataram.
+                </p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="flex flex-col md:flex-row items-start md:space-x-8 mb-12">
+                <div class="w-full md:w-1/2">
+                <div class="flex items-center mb-4 space-x-2 justify-start">
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-800">
+                     20 Oktober 1677
+                    </h3>
+                    <div class="w-4 h-4 bg-orange-400 rounded-full"></div>
+                </div>
+                <p class="text-start text-gray-600 leading-relaxed">
+                    Status kadipaten pun diubah menjadi kabupaten dengan wedana Bupati Mancanegara Wetan, Mas Toemapel yang juga merangkap sebagai Bupati I yang berkedudukan di Jipang.
+                Maka tanggal, bulan dan tahun tersebut ditetapkan sebagai HARI JADI KABUPATEN BOJONEGORO.
+                </p>
+                </div>
+                <div class="w-full md:w-1/2 mb-4 md:mb-0">
+                <img src="{{ asset('images/Mas-Toemapel.jpg') }}" alt="Description of the image" class="rounded-lg shadow-md w-full">
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="flex flex-col md:flex-row items-start md:space-x-8 mb-12">
+                <div class="w-full md:w-1/2 mb-4 md:mb-0">
+                <img  src="{{ asset('images/Gedung-Pemerintahan-Kabupaten-Bojonegoro-tahun-1933.jpg') }}" alt="Description of the image" class="rounded-lg shadow-md w-full">
+                </div>
+                <div class="w-full md:w-1/2">
+                <div class="flex items-center mb-4 space-x-2 justify-end">
+                    <h3 class="text-xl md:text-2xl font-semibold text-gray-800">
+                    Tahun 1725 Masehi
+                    </h3>
+                    <div class="w-4 h-4 bg-orange-400 rounded-full"></div>
+                </div>
+                <p class="text-end text-gray-600 leading-relaxed">
+                    Susuhunan Pakubuwono II naik tahta. Tahun itu juga Susuhunan memerintahkan agar Raden Tumenggung Haria Mentahun I memindahkan pusat pemerintahan kabupaten Jipang dari Padangan ke Desa Rajekwesi. Lokasi Rajekwesi ± 10 Km di selatan kota Bojonegoro.
+                </p>
+                </div>
             </div>
         </div>
-    </section>
-
-    <!-- Section: FAQ -->
-    <section class="py-16  ">
-        @include('partials.faq')
     </section>
 
     <!-- Footer -->

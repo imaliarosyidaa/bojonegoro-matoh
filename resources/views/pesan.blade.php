@@ -116,7 +116,7 @@
                 </div>
             </div>
 
-            <!-- Booking Panel -->
+            <!-- Event Panel -->
             <div class="lg:col-span-1">
                 <div class="bg-white rounded-lg shadow-sm p-6 sticky top-8">
                     <h3 class="text-xl font-semibold mb-6">Select Tickets</h3>

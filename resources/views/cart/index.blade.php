@@ -37,9 +37,9 @@
             @foreach($cart as $item)
             <div class="flex items-center justify-between bg-white p-4 rounded-md shadow">
                 <div class="flex items-center gap-4">
-                    <img src="{{ $item->image }}" alt="{{ $item->title }}" class="w-24 h-16 object-cover rounded">
+                    <img src="{{ $item->event->image }}" alt="{{ $item->title }}" class="w-24 h-16 object-cover rounded">
                     <div>
-                        <h3 class="font-semibold">{{ $item->title }}</h3>
+                        <h3 class="font-semibold">{{ $item->event->title }}</h3>
                         <p class="text-gray-600 text-sm">Qty: {{ $item->quantity }}</p>
                         <p class="text-purple-600 font-bold">
                             {{ $item->price == 0 ? 'Gratis' : 'Rp '.number_format($item->price,0,',','.') }}

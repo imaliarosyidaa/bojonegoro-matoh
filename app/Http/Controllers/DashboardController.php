@@ -10,8 +10,7 @@ class DashboardController extends Controller
 {
     $pelanggan = \App\Models\TiketPelanggan::with('events')
         ->where('user_id', auth()->id())
-        ->latest()
-        ->first();
+        ->get();
 
     return view('dashboard', compact('pelanggan'));
 }

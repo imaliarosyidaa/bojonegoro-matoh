@@ -19,14 +19,15 @@
     <div class="min-h-screen grid grid-cols-1 md:grid-cols-2">
         <!-- Left side (Image + Branding) -->
         <div class="hidden md:flex relative">
-            <a href="/" class="flex items-center space-x-2">
+
             <img src="{{ asset('images/kayangan-api.jpg') }}" 
                  alt="Bojonegoro" 
                  class="w-full h-full object-cover" />
-                 </a>
             <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center text-center px-6">
-                <img src="{{ asset('images/logo.png') }}" alt="Logo" class="h-16 mb-4">
-                <h1 class="text-2xl font-bold text-yellow-300 mb-2">
+            <a href="/" class="flex items-center space-x-2">
+            <img src="{{ asset('images/logo.png') }}" alt="Logo" class="h-16 mb-4">
+                 </a>
+            <h1 class="text-2xl font-bold text-yellow-300 mb-2">
                     Bersama Lestarikan <br> Kebudayaan di Kab. Bojonegoro
                 </h1>
             </div>

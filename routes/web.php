@@ -4,6 +4,9 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\CheckoutController;
+use App\Http\Controllers\CartController;
+use App\Http\Controllers\ChatController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -23,19 +26,29 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::resource('events', EventController::class);
-use App\Http\Controllers\CartController;
 
 Route::post('/cart/add/{id}', [CartController::class, 'add'])->name('cart.add');
 Route::get('/cart', [CartController::class, 'index'])->name('cart.index');
 
 Route::get('/checkout', [CheckoutController::class, 'index'])->name('checkout');
 
-use App\Http\Controllers\CheckoutController;
-
 Route::get('/checkout', [CheckoutController::class, 'index'])->name('checkout');
 Route::post('/checkout', [CheckoutController::class, 'process'])->name('checkout.process');
 
 Route::delete('/cart/remove/{id}', [CartController::class, 'remove'])->name('cart.remove');
 Route::delete('/cart/clear', [CartController::class, 'clear'])->name('cart.clear');
+
+Route::get('/chat', function () {
+    return view('chat.index');
+});
+Route::post('/chat', [ChatController::class, 'send'])->name('chat.app');
+
+Route::get('/sejarah', function () {
+    return view('sejarah');
+});
+
+Route::get('/budaya', function () {
+    return view('budaya');
+});
 
 require __DIR__.'/auth.php';
